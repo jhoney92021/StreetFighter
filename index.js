@@ -1,13 +1,26 @@
-$('.container img:nth-child(2)').hover(function(){//hover function
-    $(this).attr('src','down1.png')},
+$('.arenaSelection button').hover(function(){//hover function
+    $('.container').css('background-image','url(dojo_arena_photos/matrix.jpg)')},
     function(){
-        $(this).attr('src','down2.png')
+        console.log('beach'),
+        $('.container').css('background-image','url(dojo_arena_photos/beach.jpg)')
         }
 )//hover function
 
-$('.container img:nth-child(2)').click(function(){//click to change
-    $(this).attr('src','down1.png')},
+$('.arenaSelection button').click(function(){//click to change
+    $('.container').css('background-image','url(dojo_arena_photos/dojo.jpg)')},
     function(){
-        $(this).attr('src','down2.png')
+        console.log('dojo'),
+        $('.container').css('background-image','url(dojo_arena_photos/dojo.jpg)')
         }
 )//click to change
+
+// $('.arenaSelection button').hover(function(){
+//     console.log('poops'),
+//     $(this).css('background-color', 'red')},
+//         function(){
+//             console.log('farts'),
+//             $(this).css('background-color','grey')
+//         }
+
+
+// )
